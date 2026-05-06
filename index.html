@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nina | Web Developer Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <a href="#home">Nina</a>
+    </div>
+      <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="social-links">
+        <a href="https://github.com/ninamoses" target="_blank" rel="noreferrer noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/ninamosesdeveloper/" target="_blank" rel="noreferrer noopener">LinkedIn</a>
+      </div>
+    </header>
+
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="small-heading">Hi, I'm Nina</p>
+        <h1>Building simple, elegant web experiences.</h1>
+        <p>I'm a web developer focused on clean design, responsive front-end development, and projects that make an impact.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">View Projects</a>
+          <a class="button button-secondary" href="#contact">Get in Touch</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="hero-card-inner">
+          <p>Skills</p>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Responsive Design</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-content">
+        <div>
+          <p class="section-label">About Me</p>
+          <h2>Creative web development with attention to detail.</h2>
+          <p>I enjoy turning ideas into websites that are fast, easy to use, and visually appealing. My work focuses on accessibility, responsive layouts, and thoughtful user interfaces.</p>
+        </div>
+        <div class="profile-list">
+          <div class="profile-item">
+            <strong>Location</strong>
+            <span>Remote / Anywhere</span>
+          </div>
+          <div class="profile-item">
+            <strong>Tools</strong>
+            <span>VS Code, Git, Chrome DevTools</span>
+          </div>
+          <div class="profile-item">
+            <strong>Interests</strong>
+            <span>UI design, animation, accessibility</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <p class="section-label">Projects</p>
+      <h2>Featured work with images and details.</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <figure class="project-image">
+            <img src="images/project-1.svg" alt="Screenshot of a portfolio website project">
+          </figure>
+          <div class="project-copy">
+            <h3>Portfolio Website</h3>
+            <p>A modern portfolio layout showcasing projects, professional skills, and contact details with a clean responsive design.</p>
+            <div class="project-meta">
+              <span class="tag">HTML • CSS • JavaScript</span>
+              <a class="button button-secondary" href="#" aria-label="View Portfolio Website project">View project</a>
+            </div>
+          </div>
+        </article>
+        <article class="project-card">
+          <figure class="project-image">
+            <img src="images/project-2.svg" alt="Screenshot of a landing page project">
+          </figure>
+          <div class="project-copy">
+            <h3>Landing Page</h3>
+            <p>A polished landing page concept with visual hierarchy, feature highlights, and a clear call to action.</p>
+            <div class="project-meta">
+              <span class="tag">Responsive Design</span>
+              <a class="button button-secondary" href="#" aria-label="View Landing Page project">View project</a>
+            </div>
+          </div>
+        </article>
+        <article class="project-card">
+          <figure class="project-image">
+            <img src="images/project-3.svg" alt="Screenshot of an interactive UI project">
+          </figure>
+          <div class="project-copy">
+            <h3>Interactive UI</h3>
+            <p>A simple interactive interface built for usability and performance, with subtle transitions and accessible controls.</p>
+            <div class="project-meta">
+              <span class="tag">JavaScript • UX</span>
+              <a class="button button-secondary" href="#" aria-label="View Interactive UI project">View project</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="section-content contact-content">
+        <div>
+          <p class="section-label">Contact</p>
+          <h2>Let's build something together.</h2>
+          <p>Have a project idea or want to collaborate? Send a message and I'll get back to you soon.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="button button-primary" href="mailto:ninamoses26@gmail.com">Email me</a>
+          <a class="button button-secondary" href="https://github.com/ninamoses" target="_blank" rel="noreferrer noopener">GitHub</a>
+          <a class="button button-secondary" href="https://www.linkedin.com/in/ninamosesdeveloper/" target="_blank" rel="noreferrer noopener">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Designed and built by Nina | Web Developer Portfolio</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
