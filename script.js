@@ -1,27 +1,21 @@
-const navToggle = document.querySelector('.nav-toggle');
-const siteNav = document.querySelector('.site-nav');
+// Highlight active nav link on scroll
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('nav ul a');
 
-if (navToggle && siteNav) {
-  // Toggle navigation menu
-  navToggle.addEventListener('click', () => {
-    siteNav.classList.toggle('open');
-    const expanded = siteNav.classList.contains('open');
-    navToggle.setAttribute('aria-expanded', expanded);
-  });
-
-  // Close nav when clicking a link
-  document.querySelectorAll('.site-nav a').forEach((link) => {
-    link.addEventListener('click', () => {
-      siteNav.classList.remove('open');
-      navToggle.setAttribute('aria-expanded', 'false');
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        navLinks.forEach((link) => {
+          link.classList.toggle(
+            'active',
+            link.getAttribute('href') === `#${entry.target.id}`
+          );
+        });
+      }
     });
-  });
+  },
+  { rootMargin: '-40% 0px -55% 0px' }
+);
 
-  // Close nav with Escape key for better accessibility
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && siteNav.classList.contains('open')) {
-      siteNav.classList.remove('open');
-      navToggle.setAttribute('aria-expanded', 'false');
-    }
-  });
-}
+sections.forEach((s) => observer.observe(s));
