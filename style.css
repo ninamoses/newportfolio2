@@ -156,6 +156,60 @@ section {
   flex-wrap: wrap;
 }
 
+/* ── About Me ── */
+.about-section { background: rgba(255,255,255,0.15); backdrop-filter: blur(4px); }
+
+.about-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.about-bio {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.about-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.about-detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid rgba(255,255,255,0.4);
+}
+
+.about-detail-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.about-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+}
+
+.about-detail-item > span:last-child {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+@media (max-width: 700px) {
+  .about-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+}
+
 /* ── Projects ── */
 #projects { background: rgba(255,255,255,0.25); backdrop-filter: blur(4px); }
 
